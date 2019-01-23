@@ -11,7 +11,7 @@ Installation
 Then require the package:
 
 ```
-composer require php-tmdb/symfony
+composer require DominikWeber/tmdb-symfony
 ```
 
 Configuration
