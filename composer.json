@@ -20,12 +20,19 @@
         "symfony/http-kernel": ">=2.7,<5",
         "doctrine/doctrine-cache-bundle": "^1.0",
         "php-tmdb/api": "^2.1",
-        "twig/twig": "^1.11|^2.0"
+        "twig/twig": "^1.11|^2.0",
+        "DominikWeber/tmdb4": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8||^5.0,<5.4",
         "symfony/framework-bundle": ">=2.7,<5"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:DominikWeber/tmdb4.git"
+        }
+    ],
     "autoload": {
         "psr-4": { "Tmdb\\SymfonyBundle\\": "" }
     }
