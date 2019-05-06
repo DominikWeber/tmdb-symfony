@@ -79,7 +79,7 @@
         </service>
 
         <service id="tmdb.movie_repository" class="%tmdb.movie_repository.class%" public="true">
-            <argument type="service" id="tmdb4.client" />
+            <argument type="service" id="tmdb.client" />
         </service>
 
         <service id="tmdb.network_repository" class="%tmdb.network_repository.class%" public="true">
