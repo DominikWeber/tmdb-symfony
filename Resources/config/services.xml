@@ -9,6 +9,7 @@
         <parameter key="tmdb.api_key" />
         <!-- Main classes -->
         <parameter key="tmdb.client.class">Tmdb\Client</parameter>
+        <parameter key="tmdb4.client.class">Tmdb4\Client</parameter>
         <parameter key="tmdb.client_configuration.class">Tmdb\SymfonyBundle\ClientConfiguration</parameter>
         <parameter key="tmdb.api_token.class">Tmdb\ApiToken</parameter>
         <parameter key="tmdb.request_token.class">Tmdb\RequestToken</parameter>
@@ -17,6 +18,11 @@
 
     <services>
         <service id="tmdb.client" class="%tmdb.client.class%" public="true">
+            <argument type="service" id="tmdb.api_token" />
+            <argument type="service" id="tmdb.configuration" />
+        </service>
+
+        <service id="tmdb4.client" class="%tmdb4.client.class%" public="true">
             <argument type="service" id="tmdb.api_token" />
             <argument type="service" id="tmdb.configuration" />
         </service>
